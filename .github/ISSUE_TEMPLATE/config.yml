@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💡 Tool / Feature Suggestion
+    url: https://github.com/issues/new?template=tool_suggestion.yml
+    about: Suggest a new OSINT tool for the catalog, or propose a new workspace or command.
+  - name: 📖 Read the docs
+    url: https://github.com/search?q=repo%3Aosaintmaint%2Fosaintmaint+README&type=code
+    about: Check the README for setup, dashboard controls, and command reference.
+  - name: 🛡️ Report a security vulnerability
+    url: https://github.com/security/advisories/new
+    about: Use the private security advisory — do NOT post vulnerability details in a public issue.

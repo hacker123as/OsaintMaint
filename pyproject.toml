@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "osaintmaint"
+version = "0.1.0"
+description = "A safety-first public-data intelligence and alerting toolkit."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "OsaintMaint contributors" }]
+dependencies = []
+
+[project.scripts]
+osaint = "osaintmaint.cli:main"
+osaintmaint = "osaintmaint.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,15 @@
+{
+  "db_path": "data/osaint.db",
+  "source": {
+    "base_url": "https://psp.tuerss.dev",
+    "resource": "incidents",
+    "events_path": "",
+    "api_key_env": "",
+    "user_agent": "OsaintMaint/0.1 (+public-safety-client)",
+    "timeout_seconds": 15,
+    "min_request_interval_seconds": 1.0,
+    "max_records": 100,
+    "max_response_bytes": 5242880,
+    "params": {}
+  }
+}

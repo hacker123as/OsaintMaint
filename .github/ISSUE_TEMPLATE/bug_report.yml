@@ -1,0 +1,60 @@
+name: Bug report
+description: Report a reproducible problem in OsaintMaint.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve OsaintMaint. Do not include private data, API keys, credentials, or security-sensitive details here. Use the security policy for vulnerabilities.
+
+  - type: input
+    id: version
+    attributes:
+      label: OsaintMaint version or commit
+      description: Include a safe version number or commit identifier.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Dashboard / Windows launcher
+        - Tool Manager
+        - Public-data connector
+        - Watchdogs or watch rules
+        - Export, audit, or quality tools
+        - Site workspace
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: What happened?
+      description: Give the smallest safe set of steps that reproduces the behavior.
+      placeholder: |
+        1. Run ...
+        2. Select ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Safe context
+      description: Include OS, Python version, terminal, and sanitized error text. Do not include personal data or credentials.

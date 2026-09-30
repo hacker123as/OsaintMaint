@@ -1,0 +1,29 @@
+{
+  "events": [
+    {
+      "id": "evt-001",
+      "title": "Brush fire near North Ridge",
+      "description": "Fire crews responding; evacuation information is available from the county.",
+      "category": "fire",
+      "severity": "high",
+      "status": "active",
+      "occurred_at": "2026-09-29T14:00:00Z",
+      "latitude": 40.7128,
+      "longitude": -74.0060,
+      "address": "North Ridge",
+      "url": "https://example.invalid/events/evt-001"
+    },
+    {
+      "id": "evt-002",
+      "title": "Water main repair",
+      "description": "Planned repair with a temporary road closure.",
+      "category": "infrastructure",
+      "severity": "low",
+      "status": "planned",
+      "occurred_at": "2026-09-28T09:30:00Z",
+      "latitude": 40.7306,
+      "longitude": -73.9352,
+      "address": "East Junction"
+    }
+  ]
+}

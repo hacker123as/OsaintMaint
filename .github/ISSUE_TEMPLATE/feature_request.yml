@@ -1,0 +1,40 @@
+name: Feature request
+description: Suggest a focused improvement to OsaintMaint.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea. OsaintMaint only accepts features compatible with lawful, privacy-minded public-data research.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the real workflow or verification gap.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: Explain the user-visible behavior and how it would remain reviewable.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Optional. Include existing workflows or tools you tried.
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Responsible-use check
+      options:
+        - label: This proposal does not require bypassing access controls, collecting credentials, identifying private people, or automatically executing third-party tools.
+          required: true

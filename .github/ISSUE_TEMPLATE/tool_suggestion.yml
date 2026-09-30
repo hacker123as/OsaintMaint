@@ -1,0 +1,64 @@
+name: "💡 Tool / Feature Suggestion"
+description: Suggest an OSINT tool to add to the catalog, or propose a new workspace, command, or integration.
+title: "[Suggestion]: "
+labels:
+  - suggestion
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping make OsaintMaint better! Community suggestions shape what gets built next.
+        Please keep suggestions compatible with **lawful, privacy-minded, public-data research** only.
+
+  - type: dropdown
+    id: suggestion_type
+    attributes:
+      label: What kind of suggestion is this?
+      options:
+        - New OSINT tool for the catalog
+        - New public-data resource / API shape
+        - New workspace or dashboard panel
+        - New CLI command or option
+        - New export format
+        - Integration with another local-first tool
+        - Other improvement
+    validations:
+      required: true
+
+  - type: textarea
+    id: tool_or_feature
+    attributes:
+      label: What are you suggesting?
+      description: >
+        For a **tool**: include the GitHub URL, a one-sentence description, and its primary category (e.g., geolocation, social, OSINT framework).
+        For a **feature**: describe the user-visible behavior and why it is useful.
+      placeholder: |
+        Tool: https://github.com/example/awesome-osint-tool
+        Category: geolocation
+        Why it belongs: It lets users verify public location data from open sources without any credential requirement.
+    validations:
+      required: true
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: What research problem does this solve?
+      description: Describe the real public-data workflow or verification gap this addresses.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you have tried
+      description: Optional. What existing tools or workflows did you try first?
+
+  - type: checkboxes
+    id: responsible_use
+    attributes:
+      label: Responsible-use check
+      options:
+        - label: This suggestion does not require bypassing access controls, collecting credentials, identifying private people, or automatically executing third-party tools.
+          required: true
+        - label: For a tool suggestion — the project is publicly documented, has a legitimate research use case, and I have reviewed it for obvious malicious intent.
+          required: false

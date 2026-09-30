@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">OsaintMaint OSINT Tool Manager overview</title>
+  <desc id="desc">A dark terminal-inspired overview of OsaintMaint's OSINT Tool Manager workflow, including local favorites pinned to the top of tool lists.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071326"/>
+      <stop offset="0.54" stop-color="#0b1f3f"/>
+      <stop offset="1" stop-color="#19134b"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#102c52" stop-opacity=".94"/>
+      <stop offset="1" stop-color="#111738" stop-opacity=".94"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#6ee7ff"/>
+      <stop offset=".55" stop-color="#8b9bff"/>
+      <stop offset="1" stop-color="#c084fc"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0V50" fill="none" stroke="#67e8f9" stroke-opacity=".07"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#background)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <circle cx="1370" cy="115" r="300" fill="#3b82f6" opacity=".08"/>
+  <circle cx="180" cy="760" r="290" fill="#8b5cf6" opacity=".08"/>
+
+  <g font-family="Consolas, 'Courier New', monospace">
+    <text x="100" y="110" fill="#a5f3fc" font-size="28" letter-spacing="7">OSAINTMAINT</text>
+    <text x="100" y="166" fill="#f8fafc" font-size="52" font-weight="700">OSINT TOOL MANAGER</text>
+    <text x="100" y="212" fill="#a9bad5" font-size="23">A local, explicit workflow for curated public-source discovery, pinning, and review.</text>
+
+    <rect x="100" y="270" width="690" height="495" rx="24" fill="url(#panel)" stroke="#60a5fa" stroke-opacity=".46" stroke-width="2"/>
+    <rect x="100" y="270" width="690" height="72" rx="24" fill="#101f43"/>
+    <circle cx="143" cy="306" r="9" fill="#f472b6"/>
+    <circle cx="174" cy="306" r="9" fill="#fbbf24"/>
+    <circle cx="205" cy="306" r="9" fill="#34d399"/>
+    <text x="246" y="315" fill="#bfdbfe" font-size="20">public-data console</text>
+
+    <text x="145" y="402" fill="#67e8f9" font-size="22">CATALOG</text>
+    <text x="420" y="402" fill="#f8fafc" font-size="48" font-weight="700">549</text>
+    <text x="548" y="402" fill="#c7d2fe" font-size="21">curated source tools</text>
+    <line x1="145" y1="435" x2="745" y2="435" stroke="#67e8f9" stroke-opacity=".24"/>
+
+    <text x="145" y="486" fill="#e0f2fe" font-size="25">[7]</text>
+    <text x="250" y="486" fill="#f8fafc" font-size="25">Tool Manager</text>
+    <text x="560" y="486" fill="#7dd3fc" font-size="19">COMMAND CENTER</text>
+
+    <text x="145" y="536" fill="#e0f2fe" font-size="25">[8]</text>
+    <text x="250" y="536" fill="#f8fafc" font-size="25">Sync Catalog</text>
+    <text x="560" y="536" fill="#7dd3fc" font-size="19">REFRESH</text>
+
+    <text x="145" y="586" fill="#e0f2fe" font-size="25">[9]</text>
+    <text x="250" y="586" fill="#f8fafc" font-size="25">Browse &amp; Install</text>
+    <text x="560" y="586" fill="#7dd3fc" font-size="19">DISCOVER</text>
+
+    <text x="145" y="636" fill="#e0f2fe" font-size="25">[A]</text>
+    <text x="250" y="636" fill="#f8fafc" font-size="25">My OSINT Tools</text>
+    <text x="560" y="636" fill="#7dd3fc" font-size="19">MANAGE</text>
+
+    <text x="145" y="686" fill="#e0f2fe" font-size="25">[L]</text>
+    <text x="250" y="686" fill="#f8fafc" font-size="25">Favorite Tools</text>
+    <text x="560" y="686" fill="#bbf7d0" font-size="19">PINNED FIRST</text>
+
+    <text x="145" y="732" fill="#a5f3fc" font-size="18">CTRL+C cancels an active Manager action</text>
+
+    <rect x="870" y="270" width="630" height="495" rx="24" fill="url(#panel)" stroke="#a78bfa" stroke-opacity=".48" stroke-width="2"/>
+    <text x="935" y="360" fill="#ddd6fe" font-size="21" letter-spacing="4">EXPLICIT WORKFLOW</text>
+
+    <g filter="url(#glow)">
+      <circle cx="1010" cy="475" r="54" fill="#102e50" stroke="#67e8f9" stroke-width="3"/>
+      <circle cx="1010" cy="475" r="17" fill="#67e8f9"/>
+      <path d="M955 475c18-29 37-43 55-43s37 14 55 43c-18 29-37 43-55 43s-37-14-55-43z" fill="none" stroke="#a5f3fc" stroke-width="5"/>
+      <path d="M1080 475H1160M1260 475H1340" stroke="url(#accent)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M1150 458l18 17-18 17M1330 458l18 17-18 17" fill="none" stroke="#a5f3fc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="1410" cy="475" r="54" fill="#231c50" stroke="#c084fc" stroke-width="3"/>
+      <path d="M1385 475h50M1410 450v50" stroke="#e9d5ff" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <text x="948" y="585" fill="#f8fafc" font-size="23" font-weight="700">SYNC</text>
+    <text x="1131" y="585" fill="#f8fafc" font-size="23" font-weight="700">REVIEW</text>
+    <text x="1356" y="585" fill="#f8fafc" font-size="23" font-weight="700">PIN / SAVE</text>
+
+    <text x="950" y="635" fill="#a9bad5" font-size="19">Curated GitHub sources</text>
+    <text x="1120" y="635" fill="#a9bad5" font-size="19">Read the project</text>
+    <text x="1333" y="635" fill="#a9bad5" font-size="19">Pinned top, optional checkout</text>
+
+    <rect x="935" y="680" width="500" height="45" rx="12" fill="#08182e" stroke="#67e8f9" stroke-opacity=".27"/>
+    <text x="970" y="710" fill="#bbf7d0" font-size="17">NO AUTO-EXECUTION  •  NO AUTO-DEPENDENCY INSTALL</text>
+  </g>
+</svg>
